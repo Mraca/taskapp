@@ -1,3 +1,15 @@
-	<p><% @boards %></p>
 
-hyuvyuyy
+
+<div class="container-fluid">
+	<div class="row">
+		<% @boards.each do |b| %>
+			<div class="col-md-3 board">
+				<h4><%= b.name %></h4>
+				<p><%= link_to 'Destroy', b, :method => :delete %></p>
+			</div>
+		<% end %>
+			<div class="col-md-3 board add-new-board">
+				<h4><%= link_to 'Add new board', new_board_path, :method => :create %></h4>
+			</div>
+	</div>
+</div>
