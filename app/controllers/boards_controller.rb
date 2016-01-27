@@ -9,14 +9,11 @@ class BoardsController < ApplicationController
 		redirect_to boards_url
 	end
 
-	def create
-		@board = Board.new(params[:name => 'Dupa'])
-		if @board.save
-			redirect_to boards_path
-		end
-	end
-
 	def new
-		redirect_to boards_path
+	  @board = Board.new(:name => "dupa")
+	  @board.save
+	  redirect_to boards_url
 	end
+	
+
 end
