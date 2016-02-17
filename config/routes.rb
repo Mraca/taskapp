@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'boards#index'
 
+  # root 'tasks#index'
+
   resources :boards
 
 
