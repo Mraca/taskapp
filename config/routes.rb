@@ -8,17 +8,18 @@ Rails.application.routes.draw do
   # root 'tasks#index'
 
   resources :boards
+  resources :tasks
 
 
 
   # Example of regular route:
-  #   get 'products/:id' => 'catalog#view'
+    # get 'tasks' => 'tasks#index'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
+    
 
   # Example resource route with options:
   #   resources :products do
